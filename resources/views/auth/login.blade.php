@@ -25,7 +25,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="assets2/images/favicon.ico" />
 	
 	<!-- PAGE TITLE HERE ============================================= -->
-	<title>SM System Login </title>
+	<title>Rapor-Mu Login </title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,23 +54,24 @@
 	<div id="loading-icon-bx"></div>
 	<div class="account-form">
 		<div class="account-head" style="background-image:url(assets2/images/background/bg2.jpg);">
-			<a href=""><img src="assets2/images/favicon.ico" alt=""></a>
+			<a href=""><img src="assets/logo/Rapormu_Logo.png" alt="" height="128px" width="128px"></a>
 		</div>
+		
 		<div class="account-form-inner">
 			<div class="account-container">
 				<div class="heading-bx left">
-					<h2 class="title-head">Login to your <span>Account</span></h2>
+				<div><h1>Welcome to Rapor-Mu</h1></div>
+					<h4 class="title-head">Login to your <span>Account</span></h4>
 					<p>Don't have an account? <a href="{{ route('register') }}">Create one here</a></p>
 				</div>	
 				  <form method="POST" action="{{ route('login') }}" class="contact-bx">
             @csrf
-				
 					<div class="row placeani">
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
-									<label>Your Name</label>
-					 <input type="email" id="email" name="email" class="form-control" placeholder="">
+									<label>Your Username</label>
+									<input type="text" id="email" name="email" class="form-control" placeholder="">
 									
 								</div>
 							</div>
@@ -100,13 +101,7 @@
 						
 							<button name="submit" type="submit" value="Submit" class="btn button-md">Login</button>
 						</div>
-						<div class="col-lg-12">
-							<h6>Login with Social media</h6>
-							<div class="d-flex">
-								<a class="btn flex-fill m-r5 facebook" href="#"><i class="fa fa-facebook"></i>Facebook</a>
-								<a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i>Google Plus</a>
-							</div>
-						</div>
+						
 					</div>
 				</form>
 			</div>
